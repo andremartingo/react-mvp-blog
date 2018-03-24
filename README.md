@@ -21,7 +21,7 @@ React MVP Blog. Use an API for backend requests.
 ## Folder Structure
 
 ```
-my-app/
+react-blog/
   README.md
   node_modules/
   package.json
@@ -29,6 +29,15 @@ my-app/
     index.html
     favicon.ico
   src/
+    actions/
+      index.js
+    components/ 
+      posts_index.js
+      posts_new.js
+      posts_show.js
+    reducers/
+      index.js
+      reducer_posts.js
     App.css
     App.js
     App.test.js
