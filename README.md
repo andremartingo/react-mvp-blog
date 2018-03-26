@@ -3,14 +3,18 @@
 </p>
 
 # React Redux Blog
-React MVP Blog. Use an API for backend requests.
 
-## Demo
+React MVP Blog. Use an API for backend requests.<p>
+This was one project from [Udemy React Course](https://www.udemy.com/react-redux/).<p>
+
+## [Demo](www.google.com)
 
 ## Mocks
+
 <img width="700" src="https://cdn-images-1.medium.com/max/1600/1*W9EVx20lNtyHafutHeG7ig.png"/>
 
 ## Buzzwords
+
 * React
 * React Router
 * Axios
@@ -31,7 +35,7 @@ react-blog/
   src/
     actions/
       index.js
-    components/ 
+    components/
       posts_index.js
       posts_new.js
       posts_show.js
@@ -47,13 +51,15 @@ react-blog/
 ```
 
 ## Instalation
+
 ```bash
-$ git clone git@github.com:andremartingo/react_blog.git
+$ git clone git@github.com:andremartingo/react-mvp-blog.git
 $ cd react_blog
 $ npm install
-
 ```
+
 ## Usage
+
 ```bash
 $ npm start
 $ open browser and go to: localhost:8080
