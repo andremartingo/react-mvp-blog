@@ -8,12 +8,12 @@ class PostsShow extends Component {
     const { id } = this.props.match.params;
     this.props.fetchPost(id);
   }
-  onDeleteClick(){
+  onDeleteClick() {
     const { id } = this.props.match.params;
-    this.props.deletePost(id, () =>{
-      this.props.history.push('/')
-    })
-   }
+    this.props.deletePost(id, () => {
+      this.props.history.push("/");
+    });
+  }
   render() {
     const { post } = this.props;
     if (!post) {
@@ -21,16 +21,28 @@ class PostsShow extends Component {
     }
     return (
       <div>
-        <Link to={`/`}>Back to index Refactor</Link>
-        <button
-          className="btn btn-danger pull-xs-right"
-          onClick={this.onDeleteClick.bind(this)}
-        >
-          Delete Post
-        </button>
-        <h3>{post.title}</h3>
-        <h6>Categories:{post.categories}</h6>
-        <p>{post.content}</p>
+        <div className="jumbotron">
+          <button
+            className="btn btn-danger pull-xs-right"
+            onClick={this.onDeleteClick.bind(this)}
+          >
+            Delete Post
+          </button>
+          <Link to={`/`}>
+            <button className="btn btn-primary pull-xs-left">
+              Back to index Refactor
+            </button>
+          </Link>
+          <div className="content">
+            <h3>
+              <span className="fa fa-align-justify" /> Post
+            </h3>
+            <h3>{post.title}</h3>
+            <h6>Categories:{post.categories}</h6>
+            <hr className="my-4" />
+            <p>Content: {post.content}</p>
+          </div>
+        </div>
       </div>
     );
   }
