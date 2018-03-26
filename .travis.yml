@@ -1,6 +1,11 @@
 language: node_js
-node_js: lts/*
-install: true
+node_js:
+  - "stable"
+cache:
+  directories:
+  - node_modules
 script:
+  - cd react-mvp-blog
+  - npm install
   - npm test
   - npm run build
