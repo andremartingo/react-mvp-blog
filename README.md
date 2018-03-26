@@ -7,7 +7,7 @@
 React MVP Blog. Use an API for backend requests.<p>
 This was one project from [Udemy React Course](https://www.udemy.com/react-redux/).<p>
 
-## [Demo](www.google.com)
+Demo : http://react-mvp-blog.andremartingo.gq
 
 ## Mocks
 
