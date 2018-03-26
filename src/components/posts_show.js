@@ -35,10 +35,9 @@ class PostsShow extends Component {
           </Link>
           <div className="content">
             <h3>
-              <span className="fa fa-align-justify" /> Post
+              <span className="fa fa-align-justify" /> {post.title}
             </h3>
-            <h3>{post.title}</h3>
-            <h6>Categories:{post.categories}</h6>
+            <h6>Categories: {post.categories}</h6>
             <hr className="my-4" />
             <p>Content: {post.content}</p>
           </div>
