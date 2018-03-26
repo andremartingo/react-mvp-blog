@@ -5,7 +5,4 @@ cache:
   directories:
   - node_modules
 script:
-  - cd react-mvp-blog
-  - npm install
-  - npm test
-  - npm run build
+  - npm start
