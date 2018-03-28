@@ -54,7 +54,7 @@ react-blog/
 
 ```bash
 $ git clone git@github.com:andremartingo/react-mvp-blog.git
-$ cd react_blog
+$ cd react-mvp-blog
 $ npm install
 ```
 
